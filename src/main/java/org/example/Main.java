@@ -42,8 +42,6 @@ public class Main {
             KeyPair kp = kpg.generateKeyPair();
             RSAPublicKey rsaPublicKey = (RSAPublicKey) kp.getPublic();
             RSAPrivateKey rsaPrivateKey = (RSAPrivateKey) kp.getPrivate();
-            KeyGenerator keyGenerator = KeyGenerator.getInstance("AES");
-            keyGenerator.init(256);
             Path privatePath = Paths.get("rsaPrivateKey.pem");
             Path publicPath = Paths.get("rsaPublicKey.pem");
             switch (choice) {
